@@ -1,6 +1,8 @@
 package net.maladun.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.maladun.testmod.block.ModBlocks;
+import net.maladun.testmod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +21,9 @@ public class TestMod {
     private static final Logger LOGGER = LogUtils.getLogger();
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
