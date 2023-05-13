@@ -1,4 +1,7 @@
 {
   "itemGroup.testtab": "Emerald Mod",
-  "item.testmod.emerald_ingot": "Emerald Ingot"
+
+  "item.testmod.emerald_ingot": "Emerald Ingot",
+
+  "block.testmod.emerald_brick": "Emerald Bricks"
 }
